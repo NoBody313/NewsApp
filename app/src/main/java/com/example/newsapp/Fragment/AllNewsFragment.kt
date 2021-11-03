@@ -25,7 +25,7 @@ class AllNewsFragment: Fragment() {
         rvNews.layoutManager = LinearLayoutManager(view.context)
         rvNews.adapter = NewsAdapter(DataNews.listAllNews)
 
-        initViewHeadline(view, 0)
+        initViewHeadline(view.context, view, 0)
 
         return view
     }

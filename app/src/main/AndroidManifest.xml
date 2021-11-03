@@ -10,10 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApp">
         <activity
+            android:theme="@style/Theme.NewsApp.NoActionBar"
+            android:name=".DetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".SplashScreenActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"

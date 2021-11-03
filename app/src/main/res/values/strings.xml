@@ -5,4 +5,5 @@
     <string name="content_img_headline">Image News Headline</string>
     <string name="txt_separate">|</string>
     <string name="content_img_news">image news</string>
+    <string name="content_img_news_detail">Image News Detail</string>
 </resources>

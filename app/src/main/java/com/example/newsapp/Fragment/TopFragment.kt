@@ -27,7 +27,7 @@ class TopFragment : Fragment() {
         rvNews.layoutManager = LinearLayoutManager(view.context)
         rvNews.adapter = NewsAdapter(DataNews.listTopNews)
 
-        initViewHeadline(view, 2)
+        initViewHeadline(view.context, view, 2)
 
         return view
     }

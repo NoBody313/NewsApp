@@ -34,6 +34,7 @@
             android:id="@+id/tv_title_headline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:maxLines="3"
             android:textColor="@color/black"
             android:textSize="18sp"
