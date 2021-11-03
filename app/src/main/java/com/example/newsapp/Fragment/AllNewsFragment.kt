@@ -25,18 +25,6 @@ class AllNewsFragment: Fragment() {
         rvNews.layoutManager = LinearLayoutManager(view.context)
         rvNews.adapter = NewsAdapter(DataNews.listAllNews)
 
-        val imgHeadline: ImageView = view.findViewById(R.id.img_news_headline)
-        val tvTableHeadline: TextView = view.findViewById(R.id.tv_title_headline)
-        val tvDescHeadline: TextView = view.findViewById(R.id.tv_desc_headline)
-        val tvDateHeadline: TextView = view.findViewById(R.id.tv_date_headline)
-        val tvAuthorHeadline: TextView = view.findViewById(R.id.tv_author_headline)
-
-        imgHeadline.setImageResource(DataNews.photoHeadline[0])
-        tvTableHeadline.text = DataNews.titleHeadline[0]
-        tvDescHeadline.text = DataNews.contentHeadline[0]
-        tvDateHeadline.text = DataNews.dateHeadline[0]
-        tvAuthorHeadline.text = DataNews.authorHeadline[0]
-
         initViewHeadline(view, 0)
 
         return view
