@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/gray_bg"
     android:orientation="vertical"
-    tools:context=".AllNewsFragment">
+    tools:context=".Fragment.AllNewsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

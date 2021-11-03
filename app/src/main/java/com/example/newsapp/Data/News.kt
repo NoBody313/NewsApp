@@ -1,4 +1,4 @@
-package com.example.newsapp
+package com.example.newsapp.Data
 
 data class News(
     val title: String,
