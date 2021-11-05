@@ -18,6 +18,12 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+        setSupportActionBar(findViewById(R.id.toolbar_detail))
+        supportActionBar?.apply {
+            // Izinkan Arrow Back Di ToolBar
+            setDisplayShowHomeEnabled(true)
+            title = "news Detail"
+        }
 
         val dataTitle = intent.getStringExtra(EXTRA_DATA_TITLE)
         val dataDate = intent.getStringExtra(EXTRA_DATA_DATE)
@@ -30,5 +36,12 @@ class DetailActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tv_author_detail).text = dataAuthor
         findViewById<TextView>(R.id.tv_content_detail).text = dataContent
         findViewById<ImageView>(R.id.img_news_detail).setImageResource(dataImage)
+
+
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
     }
 }
