@@ -27,7 +27,8 @@ class PopularFragment : Fragment() {
         rvNews.layoutManager = LinearLayoutManager(view.context)
         rvNews.adapter = NewsAdapter(DataNews.listPopularNews)
 
-        initViewHeadline(view.context, view, 1)
+        val newsHeadline = view.findViewById<View>(R.id.news_headline)
+        initViewHeadline(view.context, newsHeadline, 1)
 
         return view
     }

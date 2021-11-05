@@ -1,6 +1,7 @@
 package com.example.newsapp.Fragment
 
 import android.os.Bundle
+import android.text.Layout
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -25,7 +26,8 @@ class AllNewsFragment: Fragment() {
         rvNews.layoutManager = LinearLayoutManager(view.context)
         rvNews.adapter = NewsAdapter(DataNews.listAllNews)
 
-        initViewHeadline(view.context, view, 0)
+        val newsHeadline = view.findViewById<View>(R.id.news_headline)
+        initViewHeadline(view.context, newsHeadline, 0)
 
         return view
     }
